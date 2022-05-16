@@ -6,6 +6,10 @@ import Swift
 @_exported import SwiftUIOne
 import _Concurrency
 public struct SwiftUIOne {
-  public static func configure(apiKey: Swift.String)
+  public static func start(with licenseKey: Swift.String)
   public static func doSomeWork()
+}
+public struct License {
+  public static func validate(_ licenseKey: Swift.String)
+  public static func isValid() -> Swift.Bool
 }

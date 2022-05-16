@@ -1,0 +1,11 @@
+framework module SwiftUIOne {
+  umbrella header "SwiftUIOne.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftUIOne.Swift {
+    header "SwiftUIOne-Swift.h"
+    requires objc
+}
